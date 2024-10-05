@@ -28,7 +28,6 @@ func (va *VideoAudio) Download(sUrl string) (string, error) {
 		return "", fmt.Errorf("오류:%v", err)
 	}
 
-	// 비디오와 오디오 모두 사용할 수 있는 형식
 	formats := video.Formats.WithAudioChannels()
 	stream, _, err := va.client.GetStream(video, &formats[0])
 	if err != nil {
