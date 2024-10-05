@@ -1,4 +1,5 @@
 from AudioDownload import AudioDownload
+from ConvertmpFile import ConvertmpFile
 from VideoDownload import VideoDownload
 
 
@@ -18,6 +19,12 @@ def download_audio():
     print(sPath)
 
 
+def convert_files():
+    convert = ConvertmpFile()
+    convert.convert_all()
+
+
 if __name__ == '__main__':
-    download_video()
-    download_audio()
+    #download_video()
+    #download_audio()
+    convert_files()
