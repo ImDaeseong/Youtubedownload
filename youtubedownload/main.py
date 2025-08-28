@@ -4,7 +4,7 @@ from VideoDownload import VideoDownload
 
 
 def download_video():
-    sUrl = 'https://www.youtube.com/watch?v=rWCY5L77Mz8'
+    sUrl = 'https://www.youtube.com/watch?v=_Jkom0p9pAk'
     download = VideoDownload(sUrl)
     sName, sPath = download.getDownload()
     # print(sName)
@@ -12,7 +12,7 @@ def download_video():
 
 
 def download_audio():
-    sUrl = 'https://www.youtube.com/watch?v=09R8_2nJtjg'
+    sUrl = 'https://www.youtube.com/watch?v=mCXvMohcfP8&list=RDmCXvMohcfP8&start_radio=1'
     download = AudioDownload(sUrl)
     sName, sPath = download.getDownload()
     print(sName)
@@ -26,5 +26,5 @@ def convert_files():
 
 if __name__ == '__main__':
     #download_video()
-    #download_audio()
-    convert_files()
+    download_audio()
+    #convert_files()
